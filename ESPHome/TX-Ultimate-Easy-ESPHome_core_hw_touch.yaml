@@ -206,7 +206,7 @@ esphome:
 external_components:
   - source:
       type: git
-      url: https://github.com/edwardtfn/TX-Ultimate-Easy
+      url: https://github.com/Telk0/TX-Ultimate-Easy-Dim
       ref: v${version}
     refresh: 1h
     components:
