@@ -414,7 +414,7 @@ tx_ultimate_easy:
   on_release:
     then:
       - lambda: ESP_LOGI("core_hw_touch", "Released");
-      - script.execute: touch_on_release
+      #- script.execute: touch_on_release
 
   on_swipe_left:
     then:
