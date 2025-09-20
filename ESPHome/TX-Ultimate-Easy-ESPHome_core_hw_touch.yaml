@@ -466,11 +466,11 @@ tx_ultimate_easy:
                     (sl_tx_model_format->state == "${TX_MODEL_FORMAT_EU_TEXT}") ? "right" : "up");
           touch_swipe_right->execute();
 
-  on_touch_event:
-    - lambda: |-
-        ESP_LOGD("core_hw_touch", "Touch event:");
-        ESP_LOGD("core_hw_touch", "  State:    %i (%s)", touch.state, touch.state_str.c_str());
-        ESP_LOGD("core_hw_touch", "  Position: %i", touch.x);
+#  on_touch_event:
+#    - lambda: |-
+#        ESP_LOGD("core_hw_touch", "Touch event:");
+#        ESP_LOGD("core_hw_touch", "  State:    %i (%s)", touch.state, touch.state_str.c_str());
+#        ESP_LOGD("core_hw_touch", "  Position: %i", touch.x);
 
 uart:
   - id: uart_touch
