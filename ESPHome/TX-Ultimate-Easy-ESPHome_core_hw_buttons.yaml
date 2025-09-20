@@ -330,6 +330,7 @@ select:
     options:
       - "${BUTTON_ACTION_NONE_TEXT}"
       - "${BUTTON_1_ACTION_TEXT}"
+      - "${BUTTON_1_MOM_ACTION_TEXT}"
       - "${BUTTON_1_ACTION_FAILSAFE_TEXT}"
     initial_option: "${BUTTON_1_ACTION_TEXT}"
     optimistic: true
@@ -345,6 +346,7 @@ select:
     options:
       - "${BUTTON_ACTION_NONE_TEXT}"
       - "${BUTTON_2_ACTION_TEXT}"
+      - "${BUTTON_2_MOM_ACTION_TEXT}"
       - "${BUTTON_2_ACTION_FAILSAFE_TEXT}"
     initial_option: "${BUTTON_2_ACTION_TEXT}"
     <<: *button_select_action_base
@@ -355,6 +357,7 @@ select:
     options:
       - "${BUTTON_ACTION_NONE_TEXT}"
       - "${BUTTON_3_ACTION_TEXT}"
+      - "${BUTTON_3_MOM_ACTION_TEXT}"
       - "${BUTTON_3_ACTION_FAILSAFE_TEXT}"
     initial_option: "${BUTTON_3_ACTION_TEXT}"
     <<: *button_select_action_base
@@ -365,6 +368,7 @@ select:
     options:
       - "${BUTTON_ACTION_NONE_TEXT}"
       - "${BUTTON_4_ACTION_TEXT}"
+      - "${BUTTON_4_MOM_ACTION_TEXT}"
       - "${BUTTON_4_ACTION_FAILSAFE_TEXT}"
     initial_option: "${BUTTON_4_ACTION_TEXT}"
     <<: *button_select_action_base
