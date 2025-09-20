@@ -670,8 +670,14 @@ script:
                 sw_relay_1->toggle();
               mom_relay = (select_state == "${BUTTON_1_MOM_ACTION_TEXT}" or
                               (api_disconnected and select_state == "${BUTTON_1_ACTION_FAILSAFE_TEXT}"));
-              if (mom_relay)
-                sw_relay_1->mom();                
+              // Momentary press = ON
+              if (select_state == BUTTON_1_MOM_ACTION_TEXT) {
+                sw_relay_1->on();
+              }
+            
+              // Release = OFF
+              else if (select_state == BUTTON_RELEASED_TEXT) {
+                sw_relay_1->off();      
               break;
             case ${BUTTON_2_ID}:
               select_state = sl_button_2_action->state;
@@ -679,6 +685,14 @@ script:
                               (api_disconnected and select_state == "${BUTTON_2_ACTION_FAILSAFE_TEXT}"));
               if (toggle_relay)
                 sw_relay_2->toggle();
+              // Momentary press = ON
+              if (select_state == BUTTON_2_MOM_ACTION_TEXT) {
+                sw_relay_2->on();
+              }
+            
+              // Release = OFF
+              else if (select_state == BUTTON_RELEASED_TEXT) {
+                sw_relay_2->off();                  
               break;
             case ${BUTTON_3_ID}:
               select_state = sl_button_3_action->state;
@@ -686,6 +700,14 @@ script:
                               (api_disconnected and select_state == "${BUTTON_3_ACTION_FAILSAFE_TEXT}"));
               if (toggle_relay)
                 sw_relay_3->toggle();
+              // Momentary press = ON
+              if (select_state == BUTTON_3_MOM_ACTION_TEXT) {
+                sw_relay_3->on();
+              }
+            
+              // Release = OFF
+              else if (select_state == BUTTON_RELEASED_TEXT) {
+                sw_relay_3->off();                    
               break;
             case ${BUTTON_4_ID}:
               select_state = sl_button_4_action->state;
@@ -693,6 +715,14 @@ script:
                               (api_disconnected and select_state == "${BUTTON_4_ACTION_FAILSAFE_TEXT}"));
               if (toggle_relay)
                 sw_relay_4->toggle();
+              // Momentary press = ON
+              if (select_state == BUTTON_4_MOM_ACTION_TEXT) {
+                sw_relay_4->on();
+              }
+            
+              // Release = OFF
+              else if (select_state == BUTTON_RELEASED_TEXT) {
+                sw_relay_4->off();                    
               break;
           }
           if (toggle_relay) {
