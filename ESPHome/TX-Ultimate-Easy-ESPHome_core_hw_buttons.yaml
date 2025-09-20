@@ -22,7 +22,7 @@ substitutions:
   BUTTON_1_MOM_ACTION_TEXT: "Relay 1 (momentary)"
   BUTTON_2_MOM_ACTION_TEXT: "Relay 2 (momentary)"
   BUTTON_3_MOM_ACTION_TEXT: "Relay 3 (momentary)"
-  BUTTON_3_MOM_ACTION_TEXT: "Relay 4 (momentary)"
+  BUTTON_4_MOM_ACTION_TEXT: "Relay 4 (momentary)"
   BUTTON_1_ACTION_FAILSAFE_TEXT: "Relay 1 (API failsafe only)"
   BUTTON_2_ACTION_FAILSAFE_TEXT: "Relay 2 (API failsafe only)"
   BUTTON_3_ACTION_FAILSAFE_TEXT: "Relay 3 (API failsafe only)"
