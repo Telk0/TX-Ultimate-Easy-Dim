@@ -376,14 +376,14 @@ tx_ultimate_easy:
   id: tx_ultimate
   uart: uart_touch
 
-  on_long_touch_release:
-    - lambda: |-
-        const uint8_t touch_position = static_cast<uint8_t>(touch.x);
-        if (touch_position > ${TOUCH_POSITION_MAX_VALUE}) {  // Check for valid range
-          ESP_LOGE("core_hw_touch", "Invalid long-touch position: %" PRIu8, touch_position);
-        } else {
-          ESP_LOGI("core_hw_touch", "Long-touch released at position %" PRIu8, touch_position);
-        }
+#  on_long_touch_release:
+#    - lambda: |-
+#        const uint8_t touch_position = static_cast<uint8_t>(touch.x);
+#        if (touch_position > ${TOUCH_POSITION_MAX_VALUE}) {  // Check for valid range
+#          ESP_LOGE("core_hw_touch", "Invalid long-touch position: %" PRIu8, touch_position);
+#        } else {
+#          ESP_LOGI("core_hw_touch", "Long-touch released at position %" PRIu8, touch_position);
+#        }
 
   on_multi_touch_release:
     then:
