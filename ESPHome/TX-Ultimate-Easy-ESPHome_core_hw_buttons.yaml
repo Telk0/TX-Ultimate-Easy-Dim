@@ -19,10 +19,10 @@ substitutions:
   BUTTON_2_ACTION_TEXT: "Relay 2 (toggle)"
   BUTTON_3_ACTION_TEXT: "Relay 3 (toggle)"
   BUTTON_4_ACTION_TEXT: "Relay 4 (toggle)"
-  BUTTON_1_MOM_ACTION_TEXT: "Relay 1 (momentary)"
-  BUTTON_2_MOM_ACTION_TEXT: "Relay 2 (momentary)"
-  BUTTON_3_MOM_ACTION_TEXT: "Relay 3 (momentary)"
-  BUTTON_4_MOM_ACTION_TEXT: "Relay 4 (momentary)"
+ # BUTTON_1_MOM_ACTION_TEXT: "Relay 1 (momentary)"
+ # BUTTON_2_MOM_ACTION_TEXT: "Relay 2 (momentary)"
+ # BUTTON_3_MOM_ACTION_TEXT: "Relay 3 (momentary)"
+ # BUTTON_4_MOM_ACTION_TEXT: "Relay 4 (momentary)"
   BUTTON_1_ACTION_FAILSAFE_TEXT: "Relay 1 (API failsafe only)"
   BUTTON_2_ACTION_FAILSAFE_TEXT: "Relay 2 (API failsafe only)"
   BUTTON_3_ACTION_FAILSAFE_TEXT: "Relay 3 (API failsafe only)"
@@ -330,7 +330,7 @@ select:
     options:
       - "${BUTTON_ACTION_NONE_TEXT}"
       - "${BUTTON_1_ACTION_TEXT}"
-      - "${BUTTON_1_MOM_ACTION_TEXT}"
+      #- "${BUTTON_1_MOM_ACTION_TEXT}"
       - "${BUTTON_1_ACTION_FAILSAFE_TEXT}"
     initial_option: "${BUTTON_1_ACTION_TEXT}"
     optimistic: true
@@ -346,7 +346,7 @@ select:
     options:
       - "${BUTTON_ACTION_NONE_TEXT}"
       - "${BUTTON_2_ACTION_TEXT}"
-      - "${BUTTON_2_MOM_ACTION_TEXT}"
+      #- "${BUTTON_2_MOM_ACTION_TEXT}"
       - "${BUTTON_2_ACTION_FAILSAFE_TEXT}"
     initial_option: "${BUTTON_2_ACTION_TEXT}"
     <<: *button_select_action_base
@@ -357,7 +357,7 @@ select:
     options:
       - "${BUTTON_ACTION_NONE_TEXT}"
       - "${BUTTON_3_ACTION_TEXT}"
-      - "${BUTTON_3_MOM_ACTION_TEXT}"
+      #- "${BUTTON_3_MOM_ACTION_TEXT}"
       - "${BUTTON_3_ACTION_FAILSAFE_TEXT}"
     initial_option: "${BUTTON_3_ACTION_TEXT}"
     <<: *button_select_action_base
@@ -368,7 +368,7 @@ select:
     options:
       - "${BUTTON_ACTION_NONE_TEXT}"
       - "${BUTTON_4_ACTION_TEXT}"
-      - "${BUTTON_4_MOM_ACTION_TEXT}"
+     # - "${BUTTON_4_MOM_ACTION_TEXT}"
       - "${BUTTON_4_ACTION_FAILSAFE_TEXT}"
     initial_option: "${BUTTON_4_ACTION_TEXT}"
     <<: *button_select_action_base
