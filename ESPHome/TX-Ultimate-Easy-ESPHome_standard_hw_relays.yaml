@@ -668,8 +668,6 @@ script:
                               (api_disconnected and select_state == "${BUTTON_1_ACTION_FAILSAFE_TEXT}"));
               if (toggle_relay)
                 sw_relay_1->toggle();
-              mom_relay = (select_state == "${BUTTON_1_MOM_ACTION_TEXT}" or
-                              (api_disconnected and select_state == "${BUTTON_1_ACTION_FAILSAFE_TEXT}"));    
               break;
             case ${BUTTON_2_ID}:
               select_state = sl_button_2_action->state;
