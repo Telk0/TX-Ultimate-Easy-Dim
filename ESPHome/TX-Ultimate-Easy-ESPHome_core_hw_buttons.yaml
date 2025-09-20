@@ -29,7 +29,7 @@ substitutions:
   BUTTON_4_ACTION_FAILSAFE_TEXT: "Relay 4 (API failsafe only)"
 
   BUTTON_CLICK_MIN_LENGTH: '50'    # The minimum duration the click should last, in msec
-  BUTTON_CLICK_MAX_LENGTH: '350'   # The maximum duration the click should last, in msec
+  BUTTON_CLICK_MAX_LENGTH: '25000'   # The maximum duration the click should last, in msec
   BUTTON_MULTI_CLICK_DELAY: '250'  # The time to wait for another click, in msec
   BUTTON_PRESS_TIMEOUT: '30000'    # Ignore if button is pressed for longer than this time, in msec
   BUTTON_LONG_PRESS_DELAY: '30000'   # The time to wait to consider a long press, in msec
