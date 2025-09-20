@@ -331,7 +331,7 @@ script:
     #   - HW Vibration
 
   - id: touch_on_release
-    mode: queue
+    mode: queued
     then:
     # Extended by:
     #   - HW Buttons
